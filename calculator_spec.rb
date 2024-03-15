@@ -7,9 +7,12 @@ class TestStringCalculator < Test::Unit::TestCase
   end
 
   def test_success
+    assert_equal(0, calculator_new.add("0")) 
     assert_equal(1, calculator_new.add("1")) 
     assert_equal(6, calculator_new.add("1,5"))
+    assert_equal(6, calculator_new.add("1\n2"))
     assert_equal(6, calculator_new.add("1\n2,3"))
+    assert_equal(10, calculator_new.add("//[A][b]\n1;3;6"))
   end
 
   def test_success_delimiter

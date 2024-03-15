@@ -35,4 +35,7 @@ end
 # StringCalculator.new.add("")
 # StringCalculator.new.add("//;1\n;2")
 # StringCalculator.new.add("-1,-2,\n")
+# StringCalculator.new.add("\n")
+# StringCalculator.new.add("//[A][b]\n1;2;3")
+
 
